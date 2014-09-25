@@ -36,14 +36,14 @@ public class TicketMachine {
         return saldo;
     }
 
-    public Iterator<Integer> getTroco() {
-        return null;
-    }
+//    public Iterator<Integer> getTroco() {   este método não está sendo utilizado
+//        return null;
+//    }
 
     public String imprimir() throws SaldoInsuficienteException {
-        if (saldo < valor) {
-            throw new SaldoInsuficienteException();
-        }
+        //        if (saldo < valor) {
+//            throw new SaldoInsuficienteException(); //Tipo de Defeito: Comissão - Descrição: A condição não se aplica ao contexto.
+//        }
         String result = "*****************\n";
         result += "*** R$ " + saldo + ",00 ****\n";
         result += "*****************\n";
