@@ -13,7 +13,7 @@ class Troco {
     public Troco(int valor) {
         papeisMoeda = new PapelMoeda[6];
         int count = 0;
-        while (valor % 100 != 0) {
+        while (valor % 100 != 0) { //Tipo de Defeito: Comissão - Descrição: O laço foi criado incorretamente.
             count++;
         }
         papeisMoeda[5] = new PapelMoeda(100, count);
